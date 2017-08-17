@@ -2,14 +2,15 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-
 import Bio from '../components/Bio'
+import EffectiveDiscussionsEmbedded from '../components/EffectiveDiscussionsEmbedded.jsx'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const discussionId = 'test-test-01';
 
     return (
       <div>
@@ -34,6 +35,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
+        <EffectiveDiscussionsEmbedded />
       </div>
     )
   }
