@@ -15,8 +15,8 @@ function addScriptTagOnce() {
 
   scriptElem.async = true;
   scriptElem.type = 'text/javascript';
-  scriptElem.src = 'http://site-3.localhost/-/ed-comments.js';
-  // https://www.effectivediscussions.org/-/ed-comments.js
+  scriptElem.src = 'https://kajmagnus-blog.effectivediscussions.org/-/ed-comments.min.js';
+  // scriptElem.src = 'http://site-3.localhost/-/ed-comments.js';
 
   headOrBodyElem.appendChild(scriptElem);
   scriptTagAdded = true;
@@ -35,10 +35,10 @@ class EffectiveDiscussionsEmbedded extends Component {
 
   render() {
     return (
-      <div className="ed-comments" data-discussion-id="test-01">
+      <div className='ed-comments' data-discussion-id='test-discussion-001'>
         <noscript>Please enable Javascript to view comments.</noscript>
         <p style={{ marginTop: 25, opacity: 0.9, fontSize: '96%' }}>
-          Comments powered by <a href="https://www.effectivediscussions.org">Effective Discussions</a>.
+          Comments powered by <a href='https://www.effectivediscussions.org'>Effective Discussions</a>.
         </p>
       </div>);
   }
