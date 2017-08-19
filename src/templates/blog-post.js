@@ -35,11 +35,17 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-        <EffectiveDiscussionsEmbedded />
+        <EffectiveDiscussionsEmbedded discussionId={post.frontmatter.discussionId} />
       </div>
     )
   }
 }
+
+/* <hr/>
+  <script type="application/javascript" src='http://192.168.0.106:1337/vorlon.js'/>
+  <div>PROPS: { JSON.stringify(this.props) }</div>
+  <hr/>
+  */
 
 export default BlogPostTemplate
 
@@ -57,6 +63,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        discussionId
       }
     }
   }

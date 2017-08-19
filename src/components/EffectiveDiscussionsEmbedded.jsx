@@ -15,8 +15,15 @@ function addScriptTagOnce() {
 
   scriptElem.async = true;
   scriptElem.type = 'text/javascript';
-  scriptElem.src = 'https://kajmagnus-blog.effectivediscussions.org/-/ed-comments.min.js';
-  // scriptElem.src = 'http://site-3.localhost/-/ed-comments.js';
+  scriptElem.src = 'https://edm-49f8.kxcdn.com/-/ed-comments.v0.min.js';
+
+  //scriptElem.src = 'http://192.168.0.106/-/ed-comments.js';
+
+  // <script>edCommentsServerUrl = 'https://kajmagnus-blog.effectivediscussions.org'</script>
+  // — no, that'll be some config value in the Gatsby config file. Which will then be used
+  // to set edCommentsServerUrl from here.
+  // For now:
+  window.edCommentsServerUrl = 'https://kajmagnus-blog.effectivediscussions.org';
 
   headOrBodyElem.appendChild(scriptElem);
   scriptTagAdded = true;
@@ -35,7 +42,7 @@ class EffectiveDiscussionsEmbedded extends Component {
 
   render() {
     return (
-      <div className='ed-comments' data-discussion-id='test-discussion-001'>
+      <div className='ed-comments' data-discussion-id={this.props.discussionId || location.toString()}>
         <noscript>Please enable Javascript to view comments.</noscript>
         <p style={{ marginTop: 25, opacity: 0.9, fontSize: '96%' }}>
           Comments powered by <a href='https://www.effectivediscussions.org'>Effective Discussions</a>.
