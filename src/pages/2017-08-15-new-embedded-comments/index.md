@@ -1,8 +1,8 @@
 ---
 title: New embedded comments for static sites
-date: "2017-08-18T22:40:32.169Z"
+date: "2017-08-20T10:00:00.000Z"
 path: "/new-embedded-comments/"
-discussionId: "test-discussion-002"
+discussionId: "new-embedded-comments-2017"
 ---
 
 Here's an new embedded comments system, open source & track-free & with some novel ideas, which adds discussions to your static website, or WordPress / whatever blog. Scroll down and have a look. (This is a static site, built with Gatsby, hosted at Netlify, and with that new embedded comments system.)
@@ -30,10 +30,10 @@ Works on mobile (well at least on my mobile) but currently might take some secon
 I can provide embedded comments hosting if you don't want to maintain a server yourself.
 There's forum software too, where everyone can use the same logins and accounts.
 
-Feel free to scroll down & have a look, and post test comments e.g. "test test 123",
+Feel free to scroll down & have a look, and post test comments e.g. "test-test-123",
 and give me feedback.
-Want to use this, for your blog / website?
-Be prepared to maybe update your html a few times, and to report problems,
+Do you maybe want to try this comments system for your blog / website?
+Be prepared to update your html a few times, and to report problems,
 before everything stabilizes.
 Message me e.g. via email or Twitter, see below, or post a comment here :- )
 
