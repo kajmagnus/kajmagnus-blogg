@@ -5,7 +5,7 @@ path: "/new-embedded-comments/"
 discussionId: "new-embedded-comments-2017"
 ---
 
-Here's an new embedded comments system, open source & track-free & with some novel ideas, which adds discussions to your static website, or WordPress / whatever blog. Scroll down and have a look. (This is a static site, built with Gatsby, hosted at Netlify, and with that new embedded comments system.)
+Here's an new embedded comments system, open source, ad-free & track-free, and with some novel ideas, which adds discussions to your static website, or WordPress / whatever blog. Scroll down and have a look. (This is a static site, built with Gatsby, hosted at Netlify, and with that new embedded comments system.)
 
 Benefits and unique features:
 
@@ -23,15 +23,16 @@ And mitigates [the problem that deeply nested comments becomes too narrow], via 
 
 - **Looks nice**. Does it?
 
-[Source code here](https://www.effectivediscussions.org/) but not much point in having a look right now; I first should finish writing installation instructions.
+[Source code here](https://github.com/debiki/ed-server). I haven't finish writing installation instructions.
+
 There're moderation tools, spam filtering and rate limits.
 Works on mobile (well at least on my mobile) but currently might take some seconds to load
 (3 & 4 years old Android & iPhone 5S).
 I can provide embedded comments hosting if you don't want to maintain a server yourself.
-There's forum software too, where everyone can use the same logins and accounts.
+There's forum software too, where everyone can reuse their embedded-comments logins and accounts.
 
-Feel free to scroll down & have a look, and post test comments e.g. "test-test-123",
-and give me feedback.
+Feel free to scroll down & have a look, and post test comments, or serious comments,
+and give feedback.
 Do you maybe want to try this comments system for your blog / website?
 Be prepared to update your html a few times, and to report problems,
 before everything stabilizes.

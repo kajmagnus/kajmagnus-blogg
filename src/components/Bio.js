@@ -12,7 +12,7 @@ class Bio extends React.Component {
     return (
       <p
         style={{
-          marginBottom: rhythm(2.5),
+          marginBottom: rhythm(5 / 4),
         }}
       >
         <img

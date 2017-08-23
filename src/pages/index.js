@@ -5,8 +5,22 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
+import { runFacebookJs, runTwitterJs } from '../utils/social-buttons'
+import { styles } from '../kajmagnus-styles';
+
 
 class BlogIndex extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    runFacebookJs();
+    runTwitterJs();
+    setTimeout(() => { this.setState({ showSocial: true })}, 2000);
+  }
+
   render() {
     // console.log("props", this.props)
     const pageLinks = []
@@ -32,8 +46,17 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+          <style>{styles}</style>
+          <script src="https://apis.google.com/js/platform.js" async defer/>
+        </Helmet>
+        <div id="fb-root"/>
         <Bio />
+        <div style={{ minHeight: 60, visibility: this.state.showSocial ? 'visible' : 'hidden' }}>
+          <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="false">Tweet</a>
+          <div className="google-plus"><div className="g-plusone" data-size="medium"/></div>
+          <div className="fb-like" data-href="https://www.kajmagnus.blog/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
+        </div>
         <ul>
           {pageLinks}
         </ul>
