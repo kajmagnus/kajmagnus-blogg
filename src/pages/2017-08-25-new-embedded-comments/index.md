@@ -1,11 +1,14 @@
 ---
 title: New embedded comments for static sites
-date: "2017-08-20T10:00:00.000Z"
-path: "/new-embedded-comments/"
+date: "2017-08-25T16:37:00.000Z"
+path: "/new-embedded-comments"
 discussionId: "new-embedded-comments-2017"
 ---
 
-Here's an new embedded comments system, open source, ad-free & track-free, and with some novel ideas, which adds discussions to your static website, or WordPress / whatever blog. Scroll down and have a look. (This is a static site, built with Gatsby, hosted at Netlify, and with that new embedded comments system.)
+Here's an new embedded comments system, open source, ad-free & track-free, and with some new ideas,
+which adds discussions to your static website, or WordPress / whatever blog.
+Scroll down and have a look.
+This is a static site, built with Gatsby, hosted at Netlify, and with that new embedded comments system.
 
 Benefits and unique features:
 
