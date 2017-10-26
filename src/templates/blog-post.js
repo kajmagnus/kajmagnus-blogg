@@ -35,32 +35,8 @@ class BlogPostTemplate extends React.Component {
         <h1>
           {post.frontmatter.title}
         </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1/2),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-
-        <div style={{ minHeight: 60, visibility: this.state.showSocial ? 'visible' : 'hidden' }}>
-          <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="true">Tweet</a>
-          <div className="google-plus"><div className="g-plusone" data-size="medium"/></div>
-          <div className="fb-like" data-href={blogPostUrl} data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
-        </div>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr style={{ marginBottom: rhythm(1) }} />
-        <Bio />
-
-        <div style={{ minHeight: 60, visibility: this.state.showSocial ? 'visible' : 'hidden' }}>
-          <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="true">Tweet</a>
-          <div className="google-plus"><div className="g-plusone" data-size="medium"/></div>
-          <div className="fb-like" data-href={blogPostUrl} data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
-        </div>
 
         <EffectiveDiscussionsCommentsIframe discussionId={post.frontmatter.discussionId} edPageId={post.frontmatter.edPageId} />
       </div>
