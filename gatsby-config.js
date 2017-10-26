@@ -5,6 +5,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-ed-comments`,
+      options: {
+        commentsServerUrl: 'http://site-98.localhost', // https://kajmagnus-blog.effectivediscussions.org',
+        commentsScriptUrl: 'http://site-98.localhost/-/ed-comments.js',
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,

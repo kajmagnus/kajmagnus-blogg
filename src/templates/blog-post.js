@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Bio from '../components/Bio'
-import EffectiveDiscussionsEmbedded from '../components/EffectiveDiscussionsEmbedded.jsx'
+import EffectiveDiscussionsCommentsIframe from 'gatsby-plugin-ed-comments'
 import { rhythm, scale } from '../utils/typography'
 import { runFacebookJs, runTwitterJs } from '../utils/social-buttons'
 import { styles } from '../kajmagnus-styles';
@@ -62,7 +62,7 @@ class BlogPostTemplate extends React.Component {
           <div className="fb-like" data-href={blogPostUrl} data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
         </div>
 
-        <EffectiveDiscussionsEmbedded discussionId={post.frontmatter.discussionId} />
+        <EffectiveDiscussionsCommentsIframe discussionId={post.frontmatter.discussionId} edPageId={post.frontmatter.edPageId} />
       </div>
     )
   }
@@ -91,6 +91,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         discussionId
+        edPageId
         path
       }
     }
