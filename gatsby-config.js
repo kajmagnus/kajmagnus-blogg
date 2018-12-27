@@ -5,10 +5,12 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-ed-comments`,
+      resolve: `@debiki/gatsby-plugin-talkyard`,
       options: {
-        commentsServerUrl: 'https://kajmagnus-blog.effectivediscussions.org',
-        commentsScriptUrl: 'https://kajmagnus-blog.effectivediscussions.org/-/talkyard-comments.js'
+        talkyardServerUrl: 'https://kajmagnus-blog.talkyard.io',
+        talkyardScriptUrl: 'https://kajmagnus-blog.talkyard.io/-/talkyard-comments.min.js',
+        xcommentsServerUrl: 'http://site-97.localhost', // https://kajmagnus-blog.effectivediscussions.org',
+        xcommentsScriptUrl: 'http://site-97.localhost/-/talkyard-comments.js',
       }
     },
     {

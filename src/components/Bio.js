@@ -1,8 +1,13 @@
 import React from 'react'
 
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+// Import typefaces — no, as of 2018-12-27 they are suddenly gone, for no reason.
+// Results in:
+// Bio.js?260a:4 Uncaught Error: Cannot find module "typeface-montserrat"
+//    at Bio.js?260a:4
+//    at Object../src/components/Bio.js (Bio.js?260a:4)
+//    at t (bootstrap 349963b52eadb13bedbd:52)
+//import 'typeface-montserrat'
+//import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
 import { rhythm } from '../utils/typography'

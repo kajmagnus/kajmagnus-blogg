@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@debiki/gatsby-plugin-talkyard@=0.5.8":
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/@debiki/gatsby-plugin-talkyard/-/gatsby-plugin-talkyard-0.5.8.tgz#414398909a03b7792e3ee61f25bb71b383555e05"
+  integrity sha512-IOzmARaD3gFk70h4vzJA4FilHxenFhG4AX3RCW/Ihuw2jkybGOMc/fBh8uEaM32g2WRYDDI9Fhrahib0XIbqJA==
+  dependencies:
+    babel-runtime "^6.26.0"
+
 "@types/node@^6.0.46":
   version "6.0.85"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.85.tgz#ec02bfe54a61044f2be44f13b389c6a0e8ee05ae"
@@ -3651,12 +3658,6 @@ gatsby-module-loader@^1.0.5:
   dependencies:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
-
-gatsby-plugin-ed-comments@=0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-ed-comments/-/gatsby-plugin-ed-comments-0.4.4.tgz#250c9d00fcabc7e7d6f947fc31b55eb6cf141411"
-  dependencies:
-    babel-runtime "^6.26.0"
 
 gatsby-plugin-google-analytics@^1.0.3:
   version "1.0.3"

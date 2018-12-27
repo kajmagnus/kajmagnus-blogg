@@ -1,15 +1,15 @@
 {
   "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "KajMagnus Blog",
+  "version": "0.0.1",
+  "author": "Magnus Lindberg",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/kajmagnus/kajmagnus-blogg.git"
   },
   "dependencies": {
     "gatsby": "^1.9.29",
     "gatsby-link": "^1.6.7",
-    "gatsby-plugin-ed-comments": "=0.4.4",
+    "@debiki/gatsby-plugin-talkyard": "=0.5.8",
     "gatsby-plugin-google-analytics": "^1.0.3",
     "gatsby-plugin-manifest": "^1.0.3",
     "gatsby-plugin-offline": "^1.0.3",
@@ -39,9 +39,10 @@
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "talkyard"
   ],
-  "license": "MIT",
+  "license": "All rights reserved",
   "main": "n/a",
   "repository": {
     "type": "git",

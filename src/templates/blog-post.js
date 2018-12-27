@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Bio from '../components/Bio'
-import EffectiveDiscussionsCommentsIframe from 'gatsby-plugin-ed-comments'
+import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard'
 import { rhythm, scale } from '../utils/typography'
 import { runFacebookJs, runTwitterJs } from '../utils/social-buttons'
 import { styles } from '../kajmagnus-styles';
@@ -16,8 +16,10 @@ class BlogPostTemplate extends React.Component {
   }
 
   componentDidMount() {
-    runFacebookJs();
-    runTwitterJs();
+		// Just 1 person in a year clicked these buttons (1 FB like). That's maybe 1 in 1 000 or less.
+		// And I don't like the tracking & stalking FB etc do. So remove these btns.  [NOFBTWTR]
+    //runFacebookJs();
+    //runTwitterJs();
     setTimeout(() => { this.setState({ showSocial: true })}, 2000);
   }
 
@@ -46,23 +48,25 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
 
+				{/*  [NOFBTWTR]
         <div style={{ minHeight: 60, visibility: this.state.showSocial ? 'visible' : 'hidden' }}>
           <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="true">Tweet</a>
           <div className="google-plus"><div className="g-plusone" data-size="medium"/></div>
           <div className="fb-like" data-href={blogPostUrl} data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
-        </div>
+        </div>  */}
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />
         <Bio />
 
+				{/*  [NOFBTWTR]
         <div style={{ minHeight: 60, visibility: this.state.showSocial ? 'visible' : 'hidden' }}>
           <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="true">Tweet</a>
           <div className="google-plus"><div className="g-plusone" data-size="medium"/></div>
           <div className="fb-like" data-href={blogPostUrl} data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
-        </div>
+        </div> */}
 
-        <EffectiveDiscussionsCommentsIframe discussionId={post.frontmatter.discussionId} edPageId={post.frontmatter.edPageId} />
+        <TalkyardCommentsIframe discussionId={post.frontmatter.discussionId} talkyardPageId={post.frontmatter.edPageId} />
       </div>
     )
   }
@@ -95,4 +99,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -50,13 +50,15 @@ class BlogIndex extends React.Component {
           <style>{styles}</style>
           <script src="https://apis.google.com/js/platform.js" async defer/>
         </Helmet>
-        <div id="fb-root"/>
+				{/* [NOFBTWTR]
+        <div id="fb-root"/> */}
         <Bio />
+				{/* [NOFBTWTR]
         <div style={{ minHeight: 60, visibility: this.state.showSocial ? 'visible' : 'hidden' }}>
           <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="false">Tweet</a>
           <div className="google-plus"><div className="g-plusone" data-size="medium"/></div>
           <div className="fb-like" data-href="https://www.kajmagnus.blog/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" />
-        </div>
+        </div> */}
         <ul>
           {pageLinks}
         </ul>
