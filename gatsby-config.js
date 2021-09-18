@@ -7,7 +7,8 @@ module.exports = {
     {
       resolve: `@debiki/gatsby-plugin-talkyard`,
       options: {
-        talkyardServerUrl: 'https://kajmagnus-blog.talkyard.io',
+        talkyardServerUrl: 'https://site-2d6bc898aa.talkyard.io',
+        xtalkyardServerUrl: 'https://kajmagnus-blog.talkyard.io',
         talkyardScriptUrl: 'https://kajmagnus-blog.talkyard.io/-/talkyard-comments.min.js',
         xcommentsServerUrl: 'http://site-97.localhost', // https://kajmagnus-blog.effectivediscussions.org',
         xcommentsScriptUrl: 'http://site-97.localhost/-/talkyard-comments.js',
